@@ -113,6 +113,8 @@ Elevation は、Z 軸に沿った 2 つの表面の間の相対的な深さ、�
 
 ##### Resting elevation
 
+すべての material オブジェクトは、サイズに関係なく、静止時の elevation、または変更されないデフォルトの elevation を持ちます。オブジェクトが elevation を変更する場合には、できるだけ早くその resting elevation に戻す必要があります。
+
 ##### Component elevations:
 
 ##### Responsive elevation and dynamic elevation offsets
