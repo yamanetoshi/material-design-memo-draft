@@ -445,6 +445,68 @@ floating action button の詳細な情報は Floating Action Button の項目を
 
 ### Units and measurements
 
+一部のユニットは、異なるコンテキストで異なる意味を持ちます。この章では、画素密度のようなデバイスに依存しないピクセル、スケーラブルなピクセルの利用だけでなく、概念を説明します。
+
+#### Pixel density
+
+インチあたりのピクセル数は「ピクセル密度」と呼ばれます。高密度スクリーンは低密度のそれよりも多くのインチあたりのピクセル数を持ちます。その結果、ボタンなどの UI 要素は低密度スクリーンでは物理的に大きく表示され、高密度スクリーンでは小さく表示されます。
+
+dpi、または画面の解像度は、特定の画面における画素数を意味します。
+
+dpi = ピクセルで表現される画面の幅（または高さ）/ インチで表現される画面の幅（または高さ）
+
+![High-density screen](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7N3BFUFpveGxFWVE/layout_units_density1.png)
+
+![Low-density screen](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MjdKekwta00yVFE/layout_units_density2.png)
+
+#### Density-independent pixels (dp)
+
+「密度の独立性」は、密度の異なる画面上のUI要素の均一な表示を指します。
+
+密度非依存ピクセル（発音は「dips」）は、任意の画面上において均一な大きさに拡大縮小する柔軟なユニットです。 Androidアプリケーションを開発する時、密度の異なる画面上に均一に要素を表示するために dp を使用します。
+
+![pixels and dip](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SE4yRmp3SWsweE0/layout_units_dp.png)
+
+|Screen resolution|Screen width in pixels (dpi * width in inches)|Screen width in density-independent pixels|
+|:----------|:----------|:----------|
+|120 dpi|180 px|240 dp|
+|160 dpi|240 px| |
+|240 dpi|360 px| |
+
+あなたは3つの画面を使用している場合、画面解像度を変更することで、広いすべての1.5インチは、画面の幅は、まだすべての彼らのために240dpとなります。
+
+dp は、160 dpiの画面上の1つの物理 pixel に等しいです。 DPを計算するには：
+
+dp = (ピクセルの幅 * 160）/ dpi
+
+CSSを書くとき、DPまたはSPが記載されていてもピクセルを使用します。 dp は Android向けの開発でのみ使われる必要があります。
+
+#### Scalable pixels (sp)
+
+Android 開発において、スケーラブルなピクセル（sp）は dp と同様の機能を提供しますがフォントのためではありません。sp のデフォルト値は、dp のデフォルト値と同じです。
+
+sp と dp の主な違いは、sp がユーザーのフォント設定を保存することです。アクセシビリティのための大きなテキストの設定を持っているユーザーについては、自分のテキストサイズの好みに合わせたフォントサイズが表示されます。
+
+#### Designing layout for dp
+
+画面用のレイアウトを設計する時には、dp での要素の大きさを計算します。
+
+dp = (ピクセルの幅 * 160）/ dpi
+
+例えば、320dpi における 32x32 px のアイコンは 16x16 dp と等しい。
+
+#### Image scaling
+
+画像は、これらの比率を使用して、別の画面解像度で同じに見えるようにスケーリングすることができます：
+
+|Resolution|dpi|Pixel ratio|Image size (pixels)|
+|:---------|:--|:----------|:------------------|
+|xxxhdpi|640|4.0|400 x 400|
+|xxhdpi|480|3.0|300 x 300|
+|xhdpi|320|2.0|200 x 200|
+|hdpi|240|1.5|150 x 150|
+|mdpi|160|1.0|100 x 100|
+
 ### Metrics & keylines
 
 ### Structure
