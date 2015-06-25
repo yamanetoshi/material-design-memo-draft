@@ -60,18 +60,22 @@ Material には、固有の不変な特性や固有の振る舞いがありま�
 
 - Do. 影は、material の要素間の相対的な高さを示しています。
 
+<!--
 ![Do](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM01aOVkzWXFYb1k/inline%20whatismaterial-materialprop-physicalprop-PaperShadow_01_xhdpi_008.webm)
+-->
 
 - Don't. 影は、色によって影響されることはありません。
 
+<!--
 ![Don't](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRGhTci1mN2dWUW8/inline%20whatismaterial-materialprop-physicalprop-PaperShadow_02_xhdpi_008.webm)
+-->
 
 ##### コンテンツは独立して、material として振る舞うことができますが、それは material の境界内に限定されます。
 
 - Do. コンテンツの振る舞いは、material の挙動と無関係でかまわない。
-
+<!--
 ![Do](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaGVXTFRCVG1iU2M/whatismaterial-materialprop-physicalprop-InkDisplay_xhdpi_006.webm)
-
+-->
 ##### Material は固体です。
 
 入力イベントが、material を通過することはできません。
@@ -105,39 +109,39 @@ Material には、固有の不変な特性や固有の振る舞いがありま�
 #### Transforming material
 
 ##### Material は形を変えることができます。
-
+<!--
 ![Material can change shape.](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRjREbXNsZXBrTFU/whatismaterial-materialprop-transformingmaterial-PaperShape_xhdpi_005.webm)
-
+-->
 ##### Material は自身の持つ面に沿って拡大、収縮ができます。
-
+<!--
 ![Do](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZWtfWjlEQ0RTcXc/whatismaterial-materialprop-transformingmaterial-PaperShapeLinear_xhdpi_005.webm)
-
+-->
 ##### Material は曲げたりたたんだりできません。
-
+<!--
 ![Don't](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMXhFNUo2WmJrLWc/whatismaterial-materialprop-transformingmaterial-PaperBendFold_xhdpi_006.webm)
-
+-->
 ##### 複数の Material のシートが、単一の material のシートになるために一緒に参加することができます。
-
+<!--
 ![Multiple sheets of material can join toather to become a single sheet](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRmdDaEl6aTVGREU/whatismaterial-materialprop-transformingmaterial-PaperHeal_xhdpi_004.webm)
-
+-->
 ##### 分割した material は修復できます。たとえば、あなたは材料のシートから材料の一部を切り離すしたとすると、それらの material のシートは、再び一つのシートになることができます。
-
+<!--
 ![Material can split and become whole again](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQV9PS2Q0anFoZzg/whatismaterial-materialprop-transformingmaterial-PaperSplitHeal_xhdpi_005.webm)
-
+-->
 #### Movement of material
 
 ##### Material は、自然に生成されるか、または環境の中の任意の場所で破壊することができます。
-
+<!--
 ![Material can be spontaneously generated or destroyed](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseERpUzUxRVRtMGs/whatismaterial-materialprop-movementmaterial-PaperPointExpand_xhdpi_005.webm)
-
+-->
 ##### Material は任意の軸に沿って動かすことができます。
-
+<!--
 ![Material can move along various axes](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWkhGeVpPNVdZbE0/whatismaterial-materialprop-movementmaterial-PaperMove_xhdpi_008.webm)
-
+-->
 ##### Z 軸の動作は、典型的な material を伴うユーザ interaction の結果となります。
-
+<!--
 ![Z-axes motion prompted by user interaction](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYWJoQjFCYmdvU3c/whatismaterial-materialprop-movementmaterial-Material_Response_xhdpi_003.webm)
-
+-->
 ### Elevation and shadows
 
 Material design におけるオブジェクトは、現実世界の中のオブジェクトに似た性質を持っています。現実世界では、オブジェクトを積んだり接着したりできますが、お互いを通過することはできません。オブジェクトは影を作り、光を反射します。
@@ -277,9 +281,6 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 ##### Raised button
 
 - デフォルト: 2dp
-
-![NORMAL](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPSy1NQUtNdW5idXc/whatismaterial_3d_elevation_component02.png)
-
 - 押された状態: 8dp
 
 ![PRESSED](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPSy1NQUtNdW5idXc/whatismaterial_3d_elevation_component02.png)
@@ -287,9 +288,6 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 ##### floating action button
 
 - デフォルト: 6dp
-
-![NORMAL](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPRFp6VHZ0UTc1V2M/whatismaterial_3d_elevation_component08.png)
-
 - 押された状態: 12dp
 
 ![PRESSED](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPRFp6VHZ0UTc1V2M/whatismaterial_3d_elevation_component08.png)
@@ -297,9 +295,6 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 ##### Card
 
 - デフォルト: 2dp
-
-![NORMAL](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPb1Y5MjNXT2owMFE/whatismaterial_3d_elevation_component03.png)
-
 - ピックアップされた状態: 8dp
 
 ![PICKED-UP](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPb1Y5MjNXT2owMFE/whatismaterial_3d_elevation_component03.png)
@@ -338,9 +333,6 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 ##### Quick entry/Search bar
 
 - デフォルト: 2dp
-
-![default](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPWXU3dHFBWG84eDg/whatismaterial_3d_elevation_component04.png)
-
 - スクロール状態: 3dp
 
 ![scrolled state](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPWXU3dHFBWG84eDg/whatismaterial_3d_elevation_component04.png)
@@ -354,8 +346,6 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 ##### switch
 
 - 1dp
-
-![switch on](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPc1E0T1BZZ2V2d2s/whatismaterial_3d_elevation_component01.png)
 
 ![switch off](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B-Ef4kCjUzkPc1E0T1BZZ2V2d2s/whatismaterial_3d_elevation_component01.png)
 
@@ -374,7 +364,9 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 - 子は、そのような位置、回転、スケール、elevation などを親からの変更可能なプロパティとして継承します。
 - 兄弟は、同一階層のオブジェクトです。
 
+<!--
 ![As the parent sheet scrolls, the raised button (its child) scrolls off screen with it](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbHQ3X1ZoVXY3NjQ/WhatIsMaterial_ObjectsIn3DSpace_ObjectRelationships_01_RaisedChildButton_001.webm)
+-->
 
 ##### Exceptions
 
@@ -399,7 +391,9 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 
 オブジェクトの elevation - z-space におけるそれらの位置 - を決めるにはあなたが表現したいコンテンツ階層とオブジェクトが他のオブジェクトから独立して移動する必要があるかどうかに依存します
 
+<!--
 ![scrolling](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscnNBNFlpaTIxNnM/WhatIsMaterial_ObjectsIn3DSpace_ObjectRelationships_02_FAB_001.webm)
+-->
 
 ## Layout
 
