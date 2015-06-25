@@ -401,7 +401,55 @@ responsive elevation を持つコンポーネントはそれらのデフォル�
 
 ## Layout
 
-> Under Construction
+### Principles
+
+Material design は UX としての階層化、意味付け、フォーカスを作るための、例えば、タイポグラフィ、グリッド、スペース、スケール、色、および画像のような印刷ベースの design 要素から導かれます。Material design は視覚的要素、構造グリッド、および間隔の繰り返しによるプラットフォームや画面サイズを跨がる一貫性を担保するためにベースライングリッドや構造化テンプレートのような印刷デザインの分野からツールを採用しています。これらのレイアウトは、スケーラブルなアプリケーションを作成するプロセスを簡素化し、任意の画面サイズに適合するように拡張します。
+
+#### How paper works
+
+Material design においては紙の物理的特性は、画面に変換されます。アプリケーションの背景は、用紙の平らな、不透明な風合いに似ています。
+
+アプリケーションの振る舞いはリサイズされたり、チャップルされたり、複数シートが一緒になったりする紙の能力に似ています。ステイタスバー、システムバーのようなアプリケーションの外にある要素は別な扱いとします。それらはアプリ配下のコンテンツとは別のもので、紙の物理的特性を有していません。
+
+Material の詳細な情報については、Material Properties を参照してください。
+
+##### Seams
+
+全体共通のエッジを共有する二枚の紙はシームと呼ばれます。縫い目によって繋がっている間、それらは一緒に移動します。
+
+![Seams in two sheets of material](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RVhqalJxN01Fb0U/layout_principles_papercraft_paper1.png)
+
+##### Steps
+
+異なる Z 位置 (あるいは深さ）でオーバラップしている二つの紙のシートは step を形成します。これらは、互いに独立して移動します。
+
+![Steps in two sheets of overlapping material](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ck5NWGtlRHBCWVE/layout_principles_papercraft_paper2.png)
+
+#### Floating action button
+
+##### Floating action button
+
+フローティングアクションボタンは、ツールバーとは別の円形のシートです。これは、単一の何かを行うアクションを表します。
+
+step を作るコンテンツに関連するのであれば step に跨がることができる。
+
+![Floating action buttons straddling steps](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aGcyakNwSW1iR1U/layout_principles_papercraft_actions1.png)
+
+両方のシートのコンテンツに関連している場合、フローティングアクションボタンは、seam を跨ぐことができます。
+
+アクションのためのアンカーポイントを提供するために装飾的な seam を導入しないでください。
+
+![Floating action buttons straddling seams](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eVA3azhXVEFabUE/layout_principles_papercraft_actions2.png)
+
+floating action button の詳細な情報は Floating Action Button の項目を確認のこと。
+
+### Units and measurements
+
+### Metrics & keylines
+
+### Structure
+
+### Adaptive UI
 
 ## Components
 
