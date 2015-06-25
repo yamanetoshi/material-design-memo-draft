@@ -73,9 +73,11 @@ Material には、固有の不変な特性や固有の振る舞いがありま�
 ##### コンテンツは独立して、material として振る舞うことができますが、それは material の境界内に限定されます。
 
 - Do. コンテンツの振る舞いは、material の挙動と無関係でかまわない。
+
 <!--
 ![Do](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaGVXTFRCVG1iU2M/whatismaterial-materialprop-physicalprop-InkDisplay_xhdpi_006.webm)
 -->
+
 ##### Material は固体です。
 
 入力イベントが、material を通過することはできません。
@@ -104,7 +106,9 @@ Material には、固有の不変な特性や固有の振る舞いがありま�
 
 - Don't. Material は他の material を通過できない
 
+<!--
 ![Don't](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsekRnTGVlVEQzNXc/whatismaterial_properties_physical_07_xhdpi_009.webm)
+-->
 
 #### Transforming material
 
