@@ -509,6 +509,240 @@ dp = (ピクセルの幅 * 160）/ dpi
 
 ### Metrics & keylines
 
+#### Baseline grids
+
+すべてのコンポーネントは 8 dp の正方形のベースライングリッドに揃えます。タイプは　4　dp のベースライングリッドに揃えます。ツールバーにある icongraphy は 4 dp の正方形のベースライングリッドに揃えます。これは、モバイル、タブレット、デスクトップに適用されます。
+
+![Example of baseline grid](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTnQzUDZiZF9KNm8/layout_metrics_baseline1.png)
+
+![Example of baseline grid](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbExOZTZCd0hUZ0E/layout_metrics_baseline2.png)
+
+![Example of baseline grid](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsc0tpMGdyWDh2OUE/layout_metrics_baseline3.png)
+
+![Example of baseline grid](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZGo1cVg1TFFzQzA/layout_metrics_baseline4.png)
+
+![Example of typography in a baseline grid](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNzAtNkU0RW1vSVE/layout_metrics_baseline5.png)
+
+詳細な情報は typography を見なさい。
+
+#### Keylines and spacing
+
+##### Mobile
+
+モバイルレイアウトテンプレートは、多種多様な画面とどのように keyline と spacing が画面の端と要素に跨がって働くかという情報を含みます。下記のダウンロードファイルに含まれる画面のサンプルです。
+
+##### List
+
+- A two-column, left-aligned list with a 56 dp floating action button
+
+![Layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsb3ZESndwbXc0ekE/layout_metrics_keyline_mobile1.png)
+
+- Screen edge left and right margins: 16dp
+- Content associated with an icon or avatar left margin: 72dp
+- Horizontal margins on mobile: 16dp
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseWRUbzJuUnpkNHM/layout_metrics_keyline_mobile2.png)
+
++ Status bar: 24dp
++ Toolbar: 56dp
++ Subtitle: 48dp
++ List item: 72dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWFRSRjhiV2t2WEE/layout_metrics_keyline_mobile3.png)
+
+##### List with subheadings
+
+- A two-column list, subtitle, and right-aligned icons, with a 40dp floating action button
+
+![Layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscjNUb2lvZkpZSDA/layout_metrics_keyline_mobile4.png)
+
+- Screen edge left and right margins: 16dp
+- Content left margin from screen edge: 72dp
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMldpS1Bzc2R0NVk/layout_metrics_keyline_mobile5.png)
+
++ Status bar: 24dp
++ Toolbar: 56dp
++ Title and list items: 72dp
++ Subtitle: 48dp
++ Space between content areas: 8dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUXV2Z1gwVjdFS0E/layout_metrics_keyline_mobile6.png)
+
+##### Detial view
+
+- A detail card with a 56dp floating action button
+
+![Layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbnJKY25tRkltekk/layout_metrics_keyline_mobile7.png)
+
+- Screen edge left and right margins: 16dp
+- Content left margin from screen edge: 72dp
+- Right-side icons align 32dp from the right edge to coordinate with the floating action button
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsNVlYYkdnMktUVmc/layout_metrics_keyline_mobile8.png)
+
++ Status bar: 24dp
++ Toolbar: 56dp
++ Space between content areas: 8dp
++ List item: 72dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsN0hFU2wxOHNNU3M/layout_metrics_keyline_mobile9.png)
+
+##### Mixed content
+
+- icons, avatars, and text align on the left. A floating action button, icons, and text align on the right.
+
+![Layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRjlfWGpLMkUzRVU/layout_metrics_keyline_mobile10.png)
+
+- icons alignment from left and right edges: 16dp
+- Content associated with an icon or avatar left margin: 72dp
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsMHFJN3BXcjl2NmM/layout_metrics_keyline_mobile11.png)
+
++ Status bar: 24dp
++ List items: 56dp
++ Subtitles and list items: 48dp
++ Space between content areas: 8dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOXd1NndUQlkyTDg/layout_metrics_keyline_mobile12.png)
+
+##### Navigation drawer
+
+- A side navigation menu with icons, avatars, and text aligned on the left. Other icons align on the right.
+
+![Layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsRjc5TmFyN3F5aVU/layout_metrics_keyline_mobile13.png)
+
+- Screen edge left and right margins: 16dp
+- Content associated with an icon or avatar left margins: 72dp
+- Side nav width: The screen width minus the height of the action bar: Here, the width is 56dp from the right screen edge.
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOFlvYmdNb3ZyYVk/layout_metrics_keyline_mobile14.png)
+
++ Account menu and list items: 48dp
++ Space between content areas: 8dp
++ navigation right margin: 56dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWWRuZnU4NS05cEU/layout_metrics_keyline_mobile15.png)
+
+##### Tablet
+
+タブレットレイアウトテンプレートは14種類のスクリーンを備え、画面の端と要素間でどのように keylines and spacing が働くかを示しています。下記のダウンロードファイルに含まれる14の画面のサンプルです。
+
+##### List with detail view
+
+![Example of tablet layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYU9pMWZmVHlJWTQ/layout_metrics_keyline_tablet1.png)
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ09PVGVhZEF6VWs/layout_metrics_keyline_tablet2.png)
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsc0tUUXZrS0tmc0E/layout_metrics_keyline_tablet3.png)
+
++ Status bar and space above list: 24dp
++ List item: 64dp
++ Space between content areas: 8dp
++ List item: 72dp
+
+##### List with detail view
+
+![Example of tablet layout](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZ3NBRUhMS3Njc3M/layout_metrics_keyline_tablet4.png)
+
+![Keylines and margins](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd1R5dnZ5TWJ2X00/layout_metrics_keyline_tablet5.png)
+
+- Screen edge left and right margins: 24dp
+- Vertical center of icons distance from screen edge: 52dp
+- Left margin distance to nav item text content: 104dp
+- Content left margin from screen edge: 80dp
+
+![Vertical spacing](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaDZ3NHRNbmJ3QVU/layout_metrics_keyline_tablet6.png)
+
++ Status bar: 24dp
++ Toolbar and list item: 64dp
++ Space between content areas: 8dp
++ Subtitle, list item, and slider: 48dp
++ Title: 80dp
+
+##### Desktop
+
+デスクトップレイアウトテンプレートは、4つの異なる画面、四つの異なるウィンドウサイズとそれぞれが含まれており、窓や要素間でどのように keylines and spacing が働くかを示しています。ウィンドウサイズに基づいて、keylines and spacing ブロックは、タブレットと携帯の両方からグリッド·ルールを継承します。これが、ダウンロードで利用可能な画面のサンプルです。
+
+![Desktop full screen](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7c2FiNEFVZHJQcFE/layout_metrics_keylines_desktop1.png)
+
+![Resized windows](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Y18xZHdTUXkwVzA/layout_metrics_keylines_desktop2.png)
+
+#### Ratio keylines
+
+特定のアスペクト比、または要素の幅と高さの割合（width:height として表記される）は、UI要素と、モバイル画面のサイズの両方に適用されます。次のキーラインの画像は、これらの推奨比率を示しています：
+
+- 16:9
+- 3:2
+- 4:3
+- 1:1
+- 3:4
+- 2:3
+
+モバイル、タブレット、デスクトップに適用されます。
+
+例えば：
+
+- 1 : 1 のアスペクト比、要素が等しい高さと幅を有しています。
+- 2 : 3 のアスペクト比、360dp 幅の画像（フルスクリーン）は 540 の高さを持つでしょう
+
+あなたの要素の適切な幅や高さを測定するために、上記のアスペクト比のいずれかを使用なさい。
+
+幅 = アスペクト比 * 高さ
+
+高さ = 幅 / アスペクト比
+
+(両方の式において、アスペクト比は分数として表されます。例えば、3:2 は 3/2 となり、16:9 は 16/9 となります。)
+
+![Screen width](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZjBCVzdPOENpT28/layout_metrics_ratiokeylines1.png)
+
+![Example of screen width on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsS1RKNFQtdy1sYkU/layout_metrics_ratiokeylines2.png)
+
+![Element width](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7LTV1b3k5ekZHa1E/layout_metrics_ratiokeylines3.png)
+
+![Example of element width on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsM203V05SR1ZyX28/layout_metrics_ratiokeylines4.png)
+
+#### Incremental keylines
+
+Incremental keylines は、アクションバーの高さと同じように増分を定義し、サイズやアプリ内の他の要素の位置を決定するために、その増分の倍数を使用しています。
+
+Incremental keylines は、多くの場合デスクトップに、そしてしばしばタブレットに、まれにモバイルに適用されます。増分の数は、ウィンドウサイズによって異なります。
+
+![The space allocated for a hero image has a vertical increment of 3x.](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTnNBT2NEX1RQTzg/layout_metrics_incremental1.png)
+
+![The example card width has a horizontal increment of 8x.](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQUxUQWYyUE5NaWs/layout_metrics_incremental2.png)
+
+![THe height of the example extended app bar is 2x the increment, and the width of the right panel is 5x the increment.](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSElrWE5scnNaNkE/layout_metrics_incremental3.png)
+
+![Increments can work across many elements in Material UI.](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQseGRLSnk0LWhlZ3M/layout_metrics_incremental4.png)
+
+#### Touch target size
+
+使用可能なアプリケーションであることを確実にするために、タッチターゲットは少なくとも48×48 dp でなければなりません。ほとんどの場合、タッチターゲット間の空間は、8 dp 以上であるべきです。
+
+レイアウト内のアイコン（24dp）またはアバター（40dp）の spacing 時には、この点に注意してください。タッチターゲットがオーバーラップしないようにしてください。
+
+平均して、48dp は（ある程度の変動を含む）は約9ミリメートルの物理的なサイズに変換されます。これは、タッチスクリーンオブジェクトの推奨ターゲットサイズ（7〜10ミリメートル）の範囲内で快適であり、ユーザーは確実かつ正確に自分の指でそれらをターゲットできるようになります。
+
+あなたは、少なくとも 48dp より高く、また幅広くにあなたの要素を設計する場合、次の項目を確認することができます。
+
+- あなたのターゲットは表示された画面の 7 ミリメートルの最小推奨ターゲットサイズよりも小さくなることはありません。
+- UI 要素の targetability と全体的な情報密度の間の良い折衷点を strike します。
+
+![Example](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eEVhSW1nVjBrZnM/layout_metrics_touchtarget1.png)
+
+- Above: The element is 48dp wide and the avatar is 40dp wide.
+- Below: The element is 48dp wide and the icon is 24dp wide.
+
+![Example of touch target](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsaU12eTNLSnBEcXc/layout_metrics_touchtarget2.png)
+
+![Example](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dlN4cEMwWm9Tc28/layout_metrics_touchtarget3.png)
+
+- Touch target height: 48dp
+- Button height: 36dp
+
+![Example of touch targets and buttons](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZjVQbVZ1MzN3RGs/layout_metrics_touchtarget4.png)
+
 ### Structure
 
 ### Adaptive UI
