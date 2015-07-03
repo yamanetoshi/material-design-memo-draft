@@ -1135,6 +1135,185 @@ Full-screen background image with inset search field and carded search results
 
 ### Adaptive UI
 
+material design における responsive layout は全ての画面サイズに適応します。この adaptive UI ガイダンスはレイアウトを超えた一貫性を保証する柔軟なグリッド、どうやってコンテンツは異なる画面にリフローするかについてのブレイクポイントの詳細およびどのようにアプリケーションが小さいものから特大の画面にスケールできるかの説明を含みます。
+
+#### Breakpoints
+
+最適なユーザーエクスペリエンスのために、material ユーザーインターフェイスは、次のブレークポイントの幅のためにレイアウトを適応させる必要があります：480、600、840、960、1280、1440、および1600dp。
+
+![screen width and breakpoints](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPSGFxemFiQVRtb1k/layout_adaptive_breakpoints_01.png)
+
+##### 1. Summary and detail view content in layouts
+
+- 600dpより下の幅におけるレイアウトは幅の広いコンテンツ階層の単一レベル（サマリーまたは内容の詳細内容のいずれかで、両方ではありません）で画面を埋めてもかまいません。
+- 600dp以上の幅でのレイアウトはワイド画面の内容 2 段階（サマリーおよび詳細内容の両方）の階層を配置してもかまいません。
+
+##### 2. Max screen width
+
+1600dp 以上の幅でのレイアウトは、その最大幅までレイアウトを広げてもかまいません。この時点で、グリッドは、次のいずれかを実行することがあります。
+
+- 増加マージンを伴う中央揃え
+- 右マージンが成長しながら、左側は揃えられる
+- 追加コンテンツが現れながら、成長し続けます
+
+##### Breakpoint system
+
+これらのブレークポイントは、異なる画面、デバイス、及び画面の向きの列と幅の仕様を示します。
+
+一部の測定値では、値は、デバイスが回転しても同じになります。そのためいずれの方向における最小の幅が規定する値です。
+
+ * デバイスの最小幅が <600 である場合 16dp
+
+ ** Desktop breakpoints are 16dp below the listed values to accommodate variations in browser chrome.
+
+|Breakpoint (dp)|Handset / Tablet Portrait|Handset / Tablet Landscape|Window|Columns|Gutter|
+|:--------------|:------------------------|:-------------------------|:----:|:-----:|:----:|
+|0|small handset||xsmall|4|16|
+|360|medium handset||xsmall|4|16|
+|400|large handset||xsmall|4|16|
+|480|large handset|small handset|xsmall|4|16|
+|600|small tablet|medium handset|small|8|16/24*|
+|720|large tablet|large handset|small|8|16/24*|
+|840|large tablet|large handset|small|12|16/24*|
+|960||small tablet|small|12|24|
+|1024**||large tablet|medium|12|24|
+|1280**||large tablet|medium|12|24|
+|1440**|||large|12|24|
+|1600**|||large|12|24|
+|1920**|||xlarge|12|24|
+
+#### Grid
+
+material design の adaptive UI は 12 カラムの grid layout に基づいています。デザインの様々な全体の柔軟性を可能である間、グリッドはレイアウト間の視覚的一貫性を生成します。グリッドの列の数は、ブレークポイントシステムに基づいて変化します。
+
+This animation shows how surfaces and panels can align to influence the 12-column grid.
+
+##### Margins and Gutters（余白と溝）
+
+adaptive grid はカラムの幅より margin および gutter の幅の一貫性に焦点を当てています。material design の margin および column は 8dp 正方形の baseline grid に従います。margin と gutter は 8、16、24、または 40dp の幅を取り得ます
+
+margin と gutter は等しい必要はありません。同じレイアウトにおいて 40dp の margin と 24dp の gutter を使うことは許容されます。
+
+This animation shows interactions of the following margin and gutter width variations:
+
++ 8dp margins and gutters
++ 16dp margins and gutters
++ 24dp margins and gutters
++ 40dp margins and gutters
++ 40dp margins and 24dp gutters
+
+##### Full-width vs centered
+
+Full-width grid はレイアウトが変更する必要がある時に fluid カラムとブレークポイントを使います。
+
+Centered grid は全てのカラム（プラス定義されている margin）がこれ以上画面に適応しない時に fixed カラムと reflow を使います。
+
+動画
+
++ Full-width grids
++ Centerd grids
+
+##### Panel Influence ont the Grid
+
+Navigation patterns で定義されているように、side nav は、永久的、持続的、または一時的であってもよい。これらの動作は、side nav だけではなく任意のパネルに適用されます。
+
+##### Permanent
+
+permanent panel は、adaptive grid の外に存在します。パネルは定義されたブレークポイントで表示され（スクリーンがパネルを収容できる時）、コンテンツを絞ります。パネルの表示/非表示を行うコントロールはありません。
+
+The effects of a permanent panel on the adaptive grid.
+
+##### Side panel effects on the grid
+
+このアニメーションは、2つのフェーズで行われます。
+
++ 永続的なサイドパネルが表示され、コンテンツとグリッドの両方を絞ります。パネルが表示された状態の間はコンテンツがアクセス可能です。パネルはトグル時に非表示になります。
++ 一時的なサイドパネルが表示され、オフスクリーングリッドコンテンツをプッシュします。外のパネル、パネル内のアイテムのいずれかをタッチすると、パネルが非表示になります。
+
+The effects of a persistent panel on the adaptive grid.
+
+##### Temporary Overlay
+
+off-screen 時には temporary panel はグリッドやコンテンツには影響しません。表示されるよう切り替える時にはパネルやパネル内の項目以外の場所をタッチすることで、再び非表示にすることができます。
+
+The effects of a temporary panel on the adaptive grid.
+
+#### Surface behaviors
+
+画面サイズの変更時には、UIは、以下の surface 固有の動作を使用して適応します。
+
+##### Visibility
+
+|Behavior|Definition|
+|:-------|:---------|
+|Permanent|画面スペースが利用可能である場合には、surface が常に表示されます。|
+|Persistent|surface の可視性は visible と hidden で切り替えることができます。visible の時、画面上の他の要素との相互作用で可視性が変わることはありません。|
+|Temporary|surface の可視性は visible と hidden で切り替えることができます。visible の時、画面上の他の要素との相互作用で surface が隠れるか最小かされます。|
+
+##### Width
+
+|Behavior|Definition|
+|:-------|:---------|
+|Fixed|要素の幅は、画面サイズが変更されても同じままです。|
+|Fluid|要素の幅は、画面サイズの変更に応じて成長します。|
+|Sticky|他の要素またはブレークポイントによる影響が生じるまで要素の幅は固定されています。|
+|Squeeze|要素の幅はパネルが明らかにする|
+|Push|要素の幅は同じままです。その位置はパネルが表示されて水平方向に変わり、画面の端に部分的に隠れても良い。|
+|Overlay|パネルがコンテンツ上に表示されても、素子の幅と位置は同じまま。|
+
+##### Descriptions
+
+|Behavior|Definition|
+|:-------|:---------|
+|Above, Below|要素の y 位置。|
+|Over, Under|要素の動作における z 位置。|
+|In Front, Behind|要素の静的な z 位置。|
+|Left, Right, Centered|要素の x 位置|
+|Top, Bottom|要素の y 位置と画面端との相対位置。|
+|Flat, Raised|要素の z 位置、およびその影。フラット要素には影がありません。|
+|Inset, Full Bleed|画像または要素のパディング|
+|Summary, Detail|コンテンツの概要、および要約の完全な展開|
+
+#### Patterns
+
+多くの画面スペースが利用可能であるように、次のパターンを適用することができます。
+
+##### Reveal
+
+隠された UI を明らかに
+
+![Elements such as a side nav may become visible](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPUWt3NmVSbHFWdDQ/layout_adaptiveUI_patterns_01_reveal.png)
+
+Elements such as a side nav may become visible
+
+##### Transform
+
+UI はあるフォーマットから他に変換できます
+
+![Side navigation may transform into tabs](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPSmpTSzdyVXdKS2s/layout_adaptiveUI_patterns_02_transform.png)
+
+##### Divide
+
+以前積み重ねていた UI は新しい可能なスペースに分割しなさい
+
+![Side navigation, summary content, and detail content divide within the same view as space is available](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPUElOU1A5Q05ac28/layout_adaptiveUI_patterns_03_divide.png)
+
+Side navigation, summary content, and detail content divide within the same view as space is available
+
+##### Reflow
+
+可能なスペースに UI を reflow しなさい
+
+![Elements may reflow from a single-column format to fill the content area in various combinations of side-by-side elements](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPT1VuQ0hCa2VOY1k/layout_adaptiveUI_patterns_04_reflow.png)
+
+Elements may reflow from a single-column format to fill the content area in various combinations of side-by-side elements
+
+##### Expand
+
+さらにスペースを消費するよう UI を育てる
+
+![Content cards may expand to take up more horizontal space](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8olV15J7abPQnJWNW94UTZlWmc/layout_adaptiveUI_patterns_05_expand.png)
+
 ## Components
 
 > Under Construction
