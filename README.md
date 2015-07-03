@@ -745,6 +745,394 @@ Incremental keylines は、多くの場合デスクトップに、そしてし�
 
 ### Structure
 
+#### UI regions
+
+正しい動作と影を実現するための Z 空間における要素の配置については、Environment および Elevations and shadows 節を参照してください。
+
+##### Mobile structure
+
+この構造は、恒久的なアプリバーとフローティングアクションボタンが含まれています。オプションとなる下のバーは追加機能やアクションオーバーフローのために追加できます。サイドナビゲーションメニューは他の全ての要素の上に重なります。
+
+![Mobile structure](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T0hfM01sSmRyTG8/layout_structure_regions_mobile.png)
+
+- Top left to right: Side nav, app bar/primary toolbar, content area (below the app bar/primary toolbar),  and right nav
+- On the bottom: bottom bar
+
+##### Tablet structure
+
+この構造は、恒久的なアプリバーとフローティングアクションボタンを表示します。アプリバーはタブレットおよびモバイルの下のバーの要素を吸収します。オプションとなる下のバーは追加機能やアクション·オーバーフローのために追加できます。サイドナビゲーションは他の全ての構成要素をオーバレイします。右のナビゲーションメニューは一時的に、または永久的な表示のためにピン止めされた形でアクセスすることができます。
+
+![Tablet structure](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VmpjWnp5UDZEWEU/layout_structure_regions_tablet.png)
+
+- Top left to right: Side nav, app bar/primary toolbar, content canvas (below the app bar/primary toolbar),  and right nav
+- On the bottom: bottom bar
+
+##### Desktop Structure
+
+デスクトップ構造はフローティングアクションボタンを伴った恒久的なアプリバーが含まれます。アプリバーはタブレットやモバイルの下のバーの要素を吸収します。可能であればウィンドウコントロールはアプリバーに吸収されます。
+
+サイドナビゲーションメニューは（アプリバーの下を含む）画面サイズの全高を取ることができ、一時的に、または永久的な表示のためにピン止めされた形でアクセスすることができます。サイドナビゲーションメニューだけでなく、コンテンツ·キャンバスは、タブ、パレット、またはセカンダリアクションのための、独自のセカンダリツールバーを持つことができます。
+
+![Desktop structure](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7SnotM2RNN2FFMzQ/layout_structure_regions_desktop.png)
+
+- Top left to right: App bar/primary toolbar
+- Second row from left to right: Toolbar, secondary toolbar, and toolbar
+- Third row from left to right: side nav, content canvas, and right nav On the bottom: floating action button
+
+##### UI regions
+
+プライマリとなる水平または垂直方向の仕切りを定義しなさい。
+
+![Vertical divider](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7cGZWZmxBV1d1M2s/layout_structure_regions_guidance1.png)
+
+![Horizontal divider](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dnhDVHg4WTBrbnc/layout_structure_regions_guidance2.png)
+
+L shapes を引き起こし得る非常に沢山の領域をインターフェースで切り分けることは避けなさい。その代わりに、二次領域を表現するために空白を使用しなさい。
+
+![DO](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RVg5NlRYc29XRTQ/layout_structure_regions_guidance3.png)
+
+![Don't](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NHNfYW03U28wYnM/layout_structure_regions_guidance4.png)
+
+edge をまたぐことができるのはカードと FAB のみ。
+
+![Card breaking an edge](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RHJsbFhpanhPQXc/layout_structure_regions_guidance5.png)
+
+![Floating action button breaking an edge](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aTFlbjdxV2dwZVE/layout_structure_regions_guidance6.png)
+
+具体的な振る舞いが必要とされるときまたは情報のグループ化が空白またはディバイダが提供できる何かよりもさらなる分離を必要とするなら、コンテンツを整理するためにカードを使いなさい。
+
+![Cards](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QzR3ZFdSS1VhSkk/layout_structure_regions_guidance7.png)
+
+![Cards](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7ZXRFRzA3eGpQSG8/layout_structure_regions_guidance8.png)
+
+#### Toolbars
+
+Toolbar は、汎用性があり、多くの異なる方法で使用することができます。ここではいくつかの例を示します。
+
+![Full-width, default height app bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eW41S2JtRm9CSmc/layout_structure_toolbars1.png)
+
+Full-width, default height app bar
+
+![Full-width, extended height app bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UnNtdkNxY05oelk/layout_structure_toolbars2.png)
+
+Full-width, extended height app bar
+
+![Column-width toolbars at multiple levels of hierarchy](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7eTQ0WmN0cUlHWGs/layout_structure_toolbars3.png)
+
+Column-width toolbars at multiple levels of hierarchy
+
+![Flexible toolbar and card toolbar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bW1TYXlMT0JxUWM/layout_structure_toolbars4.png)
+
+Flexible toolbar and card toolbar
+
+![Floating toolbar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7M1VKVkhLLUxuTGs/layout_structure_toolbars5.png)
+
+Floating toolbar
+
+![Detached toolbar palette](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7aEJPTW1iV0EwQ0E/layout_structure_toolbars6.png)
+
+Detached toolbar palette
+
+![Bottom toolbar that launches to a shelf and clings to the top of the keyboard or other bottom](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7M2djcm1TSG1ZQVU/layout_structure_toolbars7.png)
+
+Bottom toolbar that launches to a shelf and clings to the top of the keyboard or other bottom
+
+![Bottom toolbaar shelf](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7R21ES09zcURiR0k/layout_structure_toolbars8.png)
+
+Bottom toolbaar shelf
+
+#### App bar
+
+以前の Android のアクション·バーとして知られている app bar は、ブランディング、ナビゲーション、検索、およびアクションに使用される特別な種類のツールバーです。
+
+app bar の左側にある nav icon は
+
+- ナビゲーションドロワーを開くためのコントロール
+- アプリの階層を上方に移動するため上向き矢印
+- この画面からナビゲーションが要求されない時は略
+
+とすることができます。
+
+app bar のタイトルは、現在のページを表現し、アプリのタイトル、ページタイトル、またはページフィルタとすることができます。
+
+app bar の右側にあるアイコンは、アプリに関連するアクションです。メニューアイコンは、2 次アクションとヘルプ、設定、およびフィードバックなどのメニュー項目を含むオーバーフローメニューを開きます。
+
+![App bar structure](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RTFrbmpoWjRrY00/layout_structure_appbar_structure1.png)
+
+- On the left: Nav icon, title, and filter icon
+- On the right: Action and menu icons
+
+[!Lignt](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU1FwTUx3cmRUNG8/layout_structure_appbar_structure2.png)
+
+Light
+
+![Dark](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbGREMW9BdDdnSUk/layout_structure_appbar_structure3.png)
+
+Dark
+
+![Colored](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZF9VZDhtQlF5RGM/layout_structure_appbar_structure4.png)
+
+Colored
+
+![Transparent](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQnFjd0tiMmtsMU0/layout_structure_appbar_structure5.png)
+
+Transparent
+
+##### Title color
+
+app bar では、すべてのアイコンは、同じ色でなければなりません。
+
+増加した視覚的な階層が必要な場合は、タイトルはアイコンと異なる色を持つことができます。異なるタイトルの色は白と黒の標識の両方にとって十分なコントラストを伴う背景で最高に働きます。
+
+![Single color (default)](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbkxqbW9kQWgxZkk/layout_structure_appbar_structure6.png)
+
+Single color (default)
+
+![Distinct totle color](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQselRDRFlzNkI0SFE/layout_structure_appbar_structure7.png)
+
+Distinct totle color
+
+##### Metrics
+
+既定の高さ:
+
+- モバイル横: 48dp
+- モバイル縦: 56dp
+- タブレット/デスクトップ: 64dp
+
+拡張された app bar では、高さは既定の高さに加えて、コンテンツの増分（複数可）に等しいです。
+
+![default](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUFJUnFlRHVhUVU/layout_structure_appbar_metrics1.png)
+
+![default](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQscTFBTHJJTm41TzQ/layout_structure_appbar_metrics2.png)
+
+![Extended1](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSDBhX3BwSURRc1U/layout_structure_appbar_metrics3.png)
+
+![Extended1](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsREdycWl2SmxSTVE/layout_structure_appbar_metrics4.png)
+
+![Extended2](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsTW1zb2x5WWg5cDA/layout_structure_appbar_metrics5.png)
+
+![Extended2](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsY19yMzV5RHZyams/layout_structure_appbar_metrics6.png)
+
+![default(tablet/desktop)](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOFVmeDlPTU5LZ1E/layout_structure_appbar_metrics7.png)
+
+![Extended1(tablet/desktop)](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsVm5pN2ZRWFZQV3c/layout_structure_appbar_metrics8.png)
+
+![Extended2(tablet/desktop)](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUXlEQkIyN0xETTg/layout_structure_appbar_metrics9.png)
+
+##### Menus
+
+メニューは app bar の拡張機能として動作するというよりはむしろ、app bar に常に重ねられている紙の一時的なシートです。
+
+![Example of App bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsU094a25SRS1LXzQ/layout_structure_appbar_menu1.png)
+
+Example of App bar
+
+![Example of menu in App Bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUtFU1dySnRkbFE/layout_structure_appbar_menu2.png)
+
+Example of menu in App Bar
+
+![Example of menu in an App Bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsd0JpVzNpNzBuMjQ/layout_structure_appbar_menu3.png)
+
+Example of menu in an App Bar
+
+![Example of menu in an App Bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsWFh0S09Rb3VvYWc/layout_structure_appbar_menu4.png)
+
+Example of menu in an App Bar
+
+![Example of menu in an App Bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsX1BHTWxFbUdzMXc/layout_structure_appbar_menu5.png)
+
+#### System bars
+
+##### Status bar/window bar
+
+Android では、ステータスバーには通知アイコンとシステムアイコンが含まれています。Chrome では、トップバーには最小化、フルスクリーン、および close というウィンドウコントロールが含まれています。 Chrome のアプリでは上部のバーは消えることができ、消えた後にウィンドウコントロールは app bar に格納されます。
+
+基準:
+
+- Android status bar height: 24dp
+- Chrome window height: 32dp
+
+![Android status bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLUFLM2xkRElVM2s/layout_structure_system_status1.png)
+
+Android status bar
+
+![Chrome window bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Tkh3MGZVVktoOTQ/layout_structure_system_status2.png)
+
+Chrome window bar
+
+![Android status bar on top of the app bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsUkFVNERQODRoakk/layout_structure_system_status3.png)
+
+Android status bar on top of the app bar
+
+![Chrome window baar on top of the app bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7OFZxQTM5SmxHQjA/layout_structure_system_status4.png)
+
+Chrome window baar on top of the app bar
+
+![Chrome window controls inside app bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7cHV2LWpmTnRUbm8/layout_structure_system_status5.png)
+
+##### Dark status bar
+
+デフォルトでは、ステータスまたはウィンドウバーの色は、app bar の色の暗い影となります。レイアウトの別の要素の色を使用するか、半透明であることもできます。
+
+![Color is based on a sample taken from the content](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdkwzWUZZNEdaUzg/layout_structure_system_color1.png)
+
+Color is based on a sample taken from the content
+
+![Translucent status bar, 20% Black #000000](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsLWE2REc4RnVuTWc/layout_structure_system_color2.png)
+
+Translucent status bar, 20% Black #000000
+
+![Dark status bar](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsN3pJUmlJeDJ5NHc/layout_structure_system_color3.png)
+
+Dark status bar
+
+![Status bar color in a darker tone of the app bar color](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsdHAwWDlJWm1Sdnc/layout_structure_system_color4.png)
+
+Status bar color in a darker tone of the app bar color
+
+##### Light status bar
+
+暗いアイコン付きの明るいステータスバーは、明るいコンテンツとより調和し、暗いステータスバーの代わりに使用することができます。
+
+![Light status bar color is based on sample taken from content](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-X0Z6NHdnSjdUYTA/layout_structure_system_color5.png)
+
+Light status bar color is based on sample taken from content
+
+![Translucent light status bar, 70% White #FFFFFF](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-RmR0RU9hc1MzWGc/layout_structure_system_color6.png)
+
+Translucent light status bar, 70% White #FFFFFF
+
+![Light status bar, default background fill is #E0E0E0](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-VlV3YjN5bk0xUGc/layout_structure_system_color7.png)
+
+Light status bar, default background fill is #E0E0E0
+
+![Light status bar in darker tone of a light app bar color](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B8v7jImPsDi-eUoyd3JIWHc2MEU/layout_structure_system_color8.png)
+
+Light status bar in darker tone of a light app bar color
+
+##### Android navigation bar
+
+Androidのナビゲーションバーには、デバイスのナビゲーションコントロール: Back、Home、および Overview を収容します。また、Android 2.3 またはそれ以前のバージョン用に書かれたアプリケーションのためのメニューも表示されます。
+
+- Height: 48dp
+
+![Dark](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RWpaeTZqTmlYOHc/layout_structure_system_android1.png)
+
+Dark
+
+![Light](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7QkxkZjVDYmtSYXc/layout_structure_system_android2.png)
+
+Light
+
+##### Color variants
+
+ナビゲーションバーは、不透明、半透明、または透明にすることができます。
+
+![Translucent](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7RzhjWURpTWVsRTA/layout_structure_system_android3.png)
+
+Translucent
+
+![Translucent over complex image](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bl93YnVqdWE3NGM/layout_structure_system_android4.png)
+
+Translucent over complex image
+
+![Translucent](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MzdRU2EtbHlaRlk/layout_structure_system_android5.png)
+
+![Transparent over even-toned image](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7S2tTVjBjcUNEM00/layout_structure_system_android6.png)
+
+##### Chrome OS shelf
+
+shelf には、Chrome OS 上のアプリケーションランチャー、アプリケーションのアイコン、およびシステム設定を収容します。
+
+- Height: 56dp
+
+![Example of Chrome OS shelf](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7R3BySy1UQ2pDbGc/layout_structure_system_chrome.png)
+
+Example of Chrome OS shelf
+
+#### Side nav
+
+存在する場合、side nav bar は常に表示するため固定またはオーバレイとしての一時的な配置のために浮動表示することができます。Side nav は、画面の左側または右側に配置することができます。
+
+左 nav に表示されるコンテンツはナビゲーションまたはアイデンティティベースのものが理想とされます。右 nav のコンテンツはページのメインコンテンツのセカンダリな情報であるべきです。
+
+Navigation drawer も参照してください。
+
+![Mobile screen](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsbU5RX3BYcTJiOFk/layout_structure_sidenav1.png)
+
+Mobile screen
+
+![Side nav menu](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSnJFcnlLNUJXb2s/layout_structure_sidenav2.png)
+
+Side nav menu
+
+##### Structure
+
+side nav bar は常に表示するため固定またはオーバレイとしての一時的な配置のために浮動表示することができます。コンテンツキャンバスに重ねられたテンポラリな nav drawer に対して固定された nav panel は横側やコンテンツキャンバス下に位置します。
+
+画面サイズは、パネルが固定またはオーバーレイされているかどうかで決定されます。十分なスペースがある場合、パネルが固定され、コンテンツがそれに応じて調整します。十分なスペースが確保できない場合、パネルはオーバーレイされる必要があります。
+
+規定値
+
+モバイル：
+
+Width = 画面の幅 - 56dp
+
+最大幅：320dp
+
+左の nav を使用した場合、最大幅にのみ適用されます。右の nav を使用する場合は、パネルがスクリーンの幅全体をカバーすることができます。
+
+デスクトップ：左パネルの最大幅は 400dp です。右ナビゲーションは、コンテンツに応じて変えることができます。
+
+![Left nav on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsanRZMG5CaFRDWlE/layout_structure_sidenav_structure1.png)
+
+Left nav on mobile
+
+![Left nav on desktop](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bXlOVlM1bGV2Q0k/layout_structure_sidenav_structure3.png)
+
+Left nav on desktop
+
+![Right nav on desktop](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7d2Z0QURUVk5hV2M/layout_structure_sidenav_structure4.png)
+
+Right nav on desktop
+
+#### Whiteframes
+
+Whiteframes は surface、レイヤー、影に一貫したアプローチを使用してレイアウト構造の多様性を提供します。
+
+whiteframes に関するダウンロードおよびその他の情報については、Resources を参照してください。
+
+![Carded content that expands and collapses](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNVGJCUHZUcUtBSVE/layout-structure-whiteframe_bigtop_large_xhdpi.png)
+
+Carded content that expands and collapses
+
+![Overlayed content details with focused app bar on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNZ3ZWYkxacmJBZ1E/layout-structure-whiteframe_calendar_large_xhdpi.png)
+
+Overlayed content details with focused app bar on mobile
+
+![Overlapping content card with multiple toolbars and background image on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNbjdWb0JqRmpOZFk/layout-structure-whiteframe_contacts_large_xhdpi.png)
+
+Overlapping content card with multiple toolbars and background image on mobile
+
+![Extended app bar and right side nav](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNbjdWb0JqRmpOZFk/layout-structure-whiteframe_contacts_large_xhdpi.png)
+
+Extended app bar and right side nav
+
+![Left side nav and one-up stream on mobile](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNWFBhWmo1d1gyMlU/layout-structure-whiteframe_gallery_large_xhdpi.png)
+
+Left side nav and one-up stream on mobile
+
+![Source list](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNMU12c2xDS1QtZFk/layout-structure-whiteframe_mail_large_xhdpi.png)
+
+Source list
+
+![Full-screen background image with inset search field and carded search results](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNM2k4eGVaYjg0LVk/layout-structure-whiteframe_maps_large_xhdpi.png)
+
+Full-screen background image with inset search field and carded search results
+
+![Expandable footer drawer](https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B08MbvYZK1iNT29PaWxfZ21iOW8/layout-structure-whiteframe_music_large_xhdpi.png)
+
 ### Adaptive UI
 
 ## Components
